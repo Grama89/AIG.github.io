@@ -1,0 +1,15 @@
+.wtbg{
+    background-color: whitesmoke;
+    display: flex;
+    z-index: -2;
+    position: absolute;
+    width: 1050px;
+    height: 7800px;
+    margin-top: 100px;
+    border-radius:9px ;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    margin-top: 100px;
+    box-shadow: 0 0 2px 2px whitesmoke;
+}
