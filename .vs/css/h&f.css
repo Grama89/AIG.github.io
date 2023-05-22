@@ -1,0 +1,86 @@
+.header{
+    margin: auto;
+    left: 0;
+    right: 0;
+    height:63px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+    background-color: #f5f5f5;
+}
+.hleft{
+    width: 55%;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    z-index: 2;
+}
+.hright{
+    width: 17%;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    z-index: 2;
+}
+.social{
+    width: 12%;
+}
+.logo{
+    border-radius: 3px;
+    margin-left: 15px;
+    height: 45px;
+    transition: box-shadow 0.18s;
+}
+.logo:hover{
+    box-shadow: 0px 0px 7px #0563bb;
+}
+.logo:active{
+    box-shadow: 0px 0px 7px #000000;
+}
+.navbar a {
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    color: #0563bb; 
+    font-weight: bold;
+    font-size: 1em;
+    text-decoration: none;
+    margin-left: 40px;
+}
+.navbar a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background:#0563bb;
+    border-radius: 5px;
+    left: 0;
+    bottom: -3px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s;
+}
+.navbar a:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.navbar2 a{
+    position: relative;
+    margin-left: 50px;
+    transition: opacity 0.15s;
+}
+.navbar2 a:hover{
+    opacity: 0.7;
+}
+.footer{
+    margin-top: 235px;
+    background-color: #f5f5f5;
+    width: 100%;
+    height: 230px;
+    display: flex;
+    align-items: center;
+}
+.footertxt{
+    margin: auto;
+}
